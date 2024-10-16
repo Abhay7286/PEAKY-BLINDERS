@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Taviraj", serif;
+    background-color: #161720;
+    overflow-x: hidden;
+}
+
+/* MAIN  */
+
+.main{
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2022/11/PB6_EP01_SC28-32_MS_15.02.21__1995-scaled.jpg");
+    height: 75vh;
+    background-size: cover;
+    position: relative;
+    background-position: center
+}
+.main > img{
+    position: absolute;
+    width: 14em;
+    top: 6em;
+    left: 4em;
+}
+.peaky_logo{
+    width: 16%;
+    position: absolute;
+    left: 7em;
+    top: 7em;
+}
+.main > h3{
+    position: absolute;
+    color: white;
+    left: 3.6em;
+    top: 16em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hamburger{
+    left: 4em !important;
+    bottom: -3em !important;
+}
+
+
+/* SLIDER  */
+
+.slider-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    position: relative;
+    width: 100vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.arthur{
+    height: 45vh;
+    position: absolute;
+    top: 4em;
+    left: 1em;
+    box-shadow: 0px 0px 50px #080808;
+    background-size: cover;
+}
+
+.thomas{
+    height: 45vh;
+    position: absolute;
+    top: 4em;
+    box-shadow: 0px 0px 50px #080808;
+    background-size: cover;
+
+}
+.lizzy{
+    height: 45vh;
+    position: absolute;
+    top: 4em;
+    box-shadow: 0px 0px 50px #080808;
+    background-size: cover;
+}
+
+img.thomas,img.arthur,img.lizzy{
+    display: block;
+    border-radius: 10px;
+}
+
+.text1, .text2 ,.text3{
+    position: absolute;
+    bottom: -10em;
+    left: -17em;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+.slides > div:not(:first-child) {
+    opacity: 0; /* Hide all slides except the first one initially */
+}
+.slider1, .slider2 , .slider3{
+    min-width: 100%;
+    transition: opacity 1s ease;
+    position: absolute;
+}
+.prev, .next {
+    position: absolute;
+    top: 14em;
+    transform: translateY(-50%);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.prev {
+    left: 2em;
+}
+.next {
+    right: 2em;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2em; /* Space between items */
+    margin: 30em 5em 0 5em;
+}
+
+.contmem{
+    padding: 20px;
+    color: white;
+    font-size: 1.5em;
+    color: #857109;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.contmem > div {
+    margin: auto;
+}
+.logo  > img {
+    width: 2em;
+}
+.insta_id {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #b7b7ba;
+    background-color: #3471ac;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    position: relative;
+    left: 36em;
+    z-index: 1;
+}
+.insta_id:hover {
+    background-color: darkblue;
+    color: green;
+}
+
+.insta_id:active {
+    transform: scale(0.98);
+}
+.footer-background {
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2022/11/PB6_EP01_SC28-32_MS_15.02.21__1995-scaled.jpg");
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    filter: blur(40px);
+    background-size: cover;
+}
+.nav {
+    position: relative;
+    top: 10em;
+}
+.social-media {
+    position: relative;
+    top: 11em;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8em;
+}
+.nav ul li{
+    display: flex;
+}
+.nav ul li a{
+    color: white;
+    font-size: 25px;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.social-media ul li{
+    list-style: none;
+}
+.footer-logo > img{
+    width: 8em;
+}
+.order > img{
+    width: 9em;
+}
+.insta, .face, .x{
+    filter: invert(1);
+    font-size: 2em;
+}
+.privacy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 13em;
+    text-align: center;
+}
+.privacy a{
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 430px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        width: 150vw;
+   }
+   .main > h3{
+        font-size: 12px;
+        left: 1em !important;
+        top: 32em !important;
+    }
+   .slider-container{
+        width: 117vw;
+   }
+   .main > img {
+        position: absolute;
+        width: 8em;
+        top: 17em;
+        left: 4em;
+    }
+    .hamburger{
+        left: 4em !important;
+        bottom: -11em !important;
+    }
+    .hamburger > button > i {
+        left: 2em;
+    }
+    .arthur,.thomas,.lizzy{
+        height: 31vh;
+        top: 4em;
+        left: -10em !important;
+    }
+    .text1,.text2,.text3{
+        display: none;
+    }
+    .content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contmem{
+        padding: 0;
+    }
+    .next{
+        right: 1em;
+        top: 11em;
+    }
+    .left{
+        left: 1em;
+        top: 11em;
+    }
+    .nav {
+        top: 50em;
+    }
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .social-media {
+        top: 50em;
+    }
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+   .insta_id {
+        top: 42em;
+        left: 9.5em;
+    }
+    .privacy{
+        top: 52em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+    .insta,.face,.x{
+        font-size: 1.5em;
+    }
+  }
+
+@media (max-width: 853px) {
+    .arthur, .thomas, .lizzy {
+        height: 26vh;
+        left: -15em;
+    } 
+
+}
+@media (max-width: 360px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        width: 100vw;
+        height: 60vh;
+   }
+   .main > h3{
+        font-size: 10px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: 13em;
+        left: 4em;
+    }
+   .slider-container{
+        width: 117vw;
+   }
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 1em;
+    }
+    .arthur, .thomas, .lizzy {
+        height: 26vh;
+        top: 4em;
+        left: -11em;
+    }
+    .prev{
+        left: 1em;
+        padding: 8px;
+    }
+    .next{
+        right: 7em;
+        padding: 8px;
+    }
+    .nav {
+        top: 36em;
+    }
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .insta_id {
+        top: 28em;
+        left: 5.5em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+    .insta,.face,.x{
+        font-size: 1.5em;
+    }
+  }
+  

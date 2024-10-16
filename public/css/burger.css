@@ -1,0 +1,79 @@
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    left: 10em;
+    bottom: 19em;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: translateY(12.5px) rotate(45deg);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: translateY(-12.5px) rotate(-45deg);
+}
+
+.ham-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 50;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ham-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.ham-nav ul li {
+    margin: 20px 0;
+}
+
+.ham-nav ul li a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.ham-nav ul li a:hover {
+    color: #f0a500;
+}
+
+.ham-nav.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.ham-nav.inactive {
+    opacity: 0;
+    visibility: hidden;
+}

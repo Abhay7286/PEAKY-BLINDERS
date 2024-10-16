@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Taviraj", serif;
+    background-color: #161720;
+    overflow-x: hidden;
+}
+.container{
+    background: rgba(0, 0, 0, .4);
+}
+.main{
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2020/02/EP-673_PB_05Dec12.jpg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    opacity: 1;
+    transition: ease 1.4s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ .main  {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+}
+
+
+.main > img{
+    margin: auto;
+    display: flex;
+    padding: 6em 0;
+    width: 9%;
+}
+.main >div > h1 > a{
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.main >div > p{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+}
+
+.seasons-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+.full-image{
+    height: 100vh;
+    width: 100vw;
+}
+.head{
+    text-decoration: underline;
+}
+.img-head{
+    position: absolute;
+    color: white;
+    font-size: 27px;
+}
+.s1-head{
+    left: 15em;
+    top: 35em;
+}
+.s2-head{
+    left: 18em;
+    top: 77em;
+}
+.s3-head{
+    left: 9em;
+    top: 118em;
+}
+.s4-head{
+    left: 0em;
+    top: 151em;
+    margin: 0 12em;
+}
+.s5-head {
+    left: 17em;
+    top: 187em;
+}
+.text{
+    color: white;
+    margin: 3em 10em;
+}
+.creator h1{
+    color: #857109;
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+    margin: 2em 2em;
+    gap: 3em;
+}
+.creator h3{
+    color: #857109;
+    text-align: center;
+}
+
+.creator img{
+    width: 24em;
+}
+.cast {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 2em; /* Space between items */
+    margin: 5em 5em 9em 5em;
+}
+.cast-title{
+    color: #857109;
+    text-align: center;
+}
+.cast-member{
+    padding: 20px;
+    color: white;
+    font-size: 1.5em;
+    color: #857109;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.cast-member p{
+    color: #fff !important;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+ 
+.footer-background {
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2020/02/EP-673_PB_05Dec12.jpg");
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    filter: blur(40px);
+    background-size: cover;
+}
+.nav {
+    position: relative;
+}
+.social-media {
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8em;
+}
+.nav ul li{
+    display: flex;
+}
+.nav ul li a{
+    color: white;
+    font-size: 25px;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.social-media ul li{
+    list-style: none;
+}
+.footer-logo > img{
+    width: 8em;
+}
+.order > img{
+    width: 9em;
+}
+.insta, .face, .x{
+    filter: invert(1);
+    font-size: 2em;
+}
+.privacy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    
+}
+.privacy a{
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 360px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 1em;
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .creator .card{
+        display: block;
+        margin: 1em 1em;
+    }
+    .card >img{
+        width: 20em !important;
+    }
+    .text6 {
+        position: relative;
+        bottom: 10em;
+    }
+
+    .cast {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 2em 1em 9em 1em;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+    .s1 img{
+        height: 80vh;
+    }
+    .s2 img{
+        height: 80vh;
+    }
+    .s3 img{
+        height: 80vh;
+    }
+    .s4 img{
+        height: 80vh;
+    }
+    .s5 img{
+        height: 80vh;
+    }
+    .s6 img{
+        height: 80vh;
+    }
+  }
+@media (max-width: 430px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .creator .card{
+        display: block;
+        margin: 1em 1em !important;
+    }
+    .card >img{
+        width: 21em !important;
+    }
+    .text6 {
+        position: relative;
+        bottom: 10em !important;
+    }
+
+    .cast {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 2em 1em 16em 1em;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+    .s1 img{
+        height: 60vh !important;
+    }
+    .s2 img{
+        height: 60vh !important;
+    }
+    .s3 img{
+        height: 60vh !important;
+    }
+    .s4 img{
+        height: 60vh !important;
+    }
+    .s5 img{
+        height: 60vh !important;
+    }
+    .s6 img{
+        height: 60vh !important;
+    }
+  }
+@media (max-width: 853px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .content{
+        margin: 0 3em 1em 1em;
+    }
+    .creator .card{
+        display: block;
+        margin: 1em 14em;
+    }
+    .card >img{
+        width: 23em;
+    }
+    .text6 {
+        position: relative;
+        bottom: 10em;
+    }
+
+    .cast {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 5em 3em 28em 1em;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+    .s1 img{
+        height: 60vh;
+    }
+    .s2 img{
+        height: 60vh;
+    }
+    .s3 img{
+        height: 60vh;
+    }
+    .s4 img{
+        height: 60vh;
+    }
+    .s5 img{
+        height: 60vh;
+    }
+    .s6 img{
+        height: 60vh;
+    }
+  }

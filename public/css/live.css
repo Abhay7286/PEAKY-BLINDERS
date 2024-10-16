@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Taviraj", serif;
+    background-color: #161720;
+    overflow-x: hidden;
+}
+.container{
+    background: rgba(0, 0, 0, .4);
+}
+.main{
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2021/12/Screenshot-2022-02-18-151433.png");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+    opacity: 1;
+    transition: ease 1.4s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ .main  {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+}
+
+.main > img{
+    margin: auto;
+    display: flex;
+    padding: 6em 0;
+    width: 9%;
+}
+.main >div > h1 > a{
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.main >div > p{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+}
+
+.shows-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+    gap: 2em; /* Space between items */
+    margin: 5em 5em 30em 5em;
+}
+.shows{
+    padding: 5px;
+    color: #857109;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 60vh;
+ 
+}
+.shows-content{
+    margin: 23em 3em 3em 5em;
+}
+
+.shows p{
+    color: #fff !important;
+}
+.shows h4 a{
+    color: #fff !important;
+    font-size: 1.2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+ 
+.footer-background {
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2021/12/Screenshot-2022-02-18-151433.png");
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    filter: blur(40px);
+    background-size: cover;
+}
+.nav {
+    position: relative;
+}
+.social-media {
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8em;
+}
+.nav ul li{
+    display: flex;
+}
+.nav ul li a{
+    color: white;
+    font-size: 25px;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.social-media ul li{
+    list-style: none;
+}
+.footer-logo > img{
+    width: 8em;
+}
+.order > img{
+    width: 9em;
+}
+.insta, .face, .x{
+    filter: invert(1);
+    font-size: 2em;
+}
+.privacy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    
+}
+.privacy a{
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 360px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 1em;
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .shows-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 2em 1em 10em 1em !important;
+    }
+    .shows-content{
+        margin: 23em 0em 3em 0em;
+        text-align: center;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+ 
+  }
+@media (max-width: 430px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+
+    .shows-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25em !important;
+        margin: 2em 1em 32em 1em !important;
+    }
+    .shows-content{
+        margin: 23em 0em 3em 0em;
+        text-align: center;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy{
+        margin: 0 2em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+  
+  }
+@media (max-width: 853px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+    .content{
+        margin: 0 3em 1em 1em;
+    }
+
+    .shows-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 5em 3em 35em 1em;
+    }
+    .shows-content{
+        margin: 40em 0em 3em 0em;
+        text-align: center;
+    }
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy{
+        margin: 0 2em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+  }

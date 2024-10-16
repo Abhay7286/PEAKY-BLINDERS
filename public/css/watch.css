@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Taviraj", serif;
+    background-color: #161720;
+    overflow-x: hidden;
+}
+.container{
+    background: rgba(0, 0, 0, .4);
+}
+.main{
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2020/03/women-series-3-ep-4.jpg");
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+    background-position: top;
+    opacity: 1;
+    transition: ease 1.4s;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+ .main  {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
+}
+
+.main > img{
+    margin: auto;
+    display: flex;
+    padding: 6em 0;
+    width: 9%;
+}
+.main >div > h1 > a{
+    color: white;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+.main >div > p{
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    text-align: center;
+}
+.seasons-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    gap: 2em; /* Space between items */
+    margin: 5em 5em 11em 5em;
+}
+.seasons{
+    padding: 5px;
+    color: white;
+    font-size: 1.5em;
+    color: #857109;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.seasons p{
+    color: #fff !important;
+}
+.season-title {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span.season-number {
+    font-size: 5em;
+    color: #fff;
+}
+span.ordinal {
+    color: #fff;
+    margin-top: -3em;
+}
+span.season-bar-divider {
+    width: 3px;
+    display: flex;
+    background: #cbc6a4;
+    height: 223px;
+    transform: rotate(27deg);
+    transition: ease .3s;
+}
+span.season-word {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: -3em;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3em;
+}
+ 
+.footer-background {
+    background-image: url("https://peakyblinders.tv/wp-content/uploads/2020/03/women-series-3-ep-4.jpg");
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    filter: blur(40px);
+    background-size: cover;
+}
+.nav {
+    position: relative;
+}
+.social-media {
+    position: relative;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 8em;
+}
+.nav ul li{
+    display: flex;
+}
+.nav ul li a{
+    color: white;
+    font-size: 25px;
+}
+.social-media ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+.social-media ul li{
+    list-style: none;
+}
+.footer-logo > img{
+    width: 8em;
+}
+.order > img{
+    width: 9em;
+}
+.insta, .face, .x{
+    filter: invert(1);
+    font-size: 2em;
+}
+.privacy{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    
+}
+.privacy a{
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+
+@media (max-width: 360px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 1em;
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+   
+    .seasons-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 2em 1em 8em 1em !important;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+  }
+@media (max-width: 430px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+
+    .seasons-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 2em 1em 8em 1em !important;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+  
+  }
+@media (max-width: 853px) {
+    .container{
+        overflow-x: hidden;
+    }
+   .main{
+        min-height: 70vh;
+        background-position: right;
+   }
+   .main > h1{
+        font-size: 6px;
+        left: 6.6em;
+        top: 31em;
+    }
+    .main > img {
+        width: 6em;
+        top: -4em;
+        left: 8em;
+    }
+ 
+    .hamburger > button > i {
+        left: 2em;
+        font-size: 2em;
+        top: 4em;
+
+    }
+
+    .nav ul{
+        gap: 0.2em;
+        margin: 0 2em;
+        flex-direction: column;
+    }
+   
+    .seasons-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2em;
+        margin: 5em 3em 25em 1em;
+    }
+    
+    .footer-logo > img {
+        width: 3em;
+    }
+    .nav ul li a {
+        font-size: 14px;
+    }
+    .order > img {
+        width: 4em;
+    }
+    .privacy a{
+        font-size: .8em;
+    }
+  
+  }
