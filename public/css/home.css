@@ -173,6 +173,7 @@ img.thomas,img.arthur,img.lizzy{
     position: relative;
     left: 36em;
     z-index: 1;
+    margin: 1em 0;
 }
 .insta_id:hover {
     background-color: darkblue;
