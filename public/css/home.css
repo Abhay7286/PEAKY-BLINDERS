@@ -254,21 +254,21 @@ img.thomas,img.arthur,img.lizzy{
    }
    .main > h3{
         font-size: 12px;
-        left: 1em !important;
-        top: 32em !important;
+        left: 3em !important;
+        top: 36em !important;
     }
    .slider-container{
         width: 117vw;
    }
    .main > img {
         position: absolute;
-        width: 8em;
+        width: 6em;
         top: 17em;
-        left: 4em;
+        left: 10em;
     }
     .hamburger{
-        left: 4em !important;
-        bottom: -11em !important;
+        left: 1em !important;
+        bottom: -2em !important;
     }
     .hamburger > button > i {
         left: 2em;
@@ -276,7 +276,7 @@ img.thomas,img.arthur,img.lizzy{
     .arthur,.thomas,.lizzy{
         height: 31vh;
         top: 4em;
-        left: -10em !important;
+        left: -12em !important;
     }
     .text1,.text2,.text3{
         display: none;
@@ -337,6 +337,7 @@ img.thomas,img.arthur,img.lizzy{
     } 
 
 }
+
 @media (max-width: 360px) {
     .container{
         overflow-x: hidden;
@@ -352,8 +353,8 @@ img.thomas,img.arthur,img.lizzy{
     }
     .main > img {
         width: 6em;
-        top: 13em;
-        left: 4em;
+        top: 17em;
+        left: 10em;
     }
    .slider-container{
         width: 117vw;
@@ -363,7 +364,7 @@ img.thomas,img.arthur,img.lizzy{
         font-size: 1em;
     }
     .arthur, .thomas, .lizzy {
-        height: 26vh;
+        height: 27vh;
         top: 4em;
         left: -11em;
     }
@@ -401,6 +402,14 @@ img.thomas,img.arthur,img.lizzy{
     }
     .insta,.face,.x{
         font-size: 1.5em;
+    }
+    .contmem{
+        background-size: contain;
+        height: 37vh;
+    }
+    .logo>img{
+        position: relative;
+        left: -1em;
     }
   }
   

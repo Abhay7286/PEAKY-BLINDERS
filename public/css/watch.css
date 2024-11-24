@@ -192,17 +192,21 @@ span.season-word {
         left: 6.6em;
         top: 31em;
     }
+    .main > h3{
+        font-size: 10px;
+        left: 6.6em;
+        top: 31em;
+    }
     .main > img {
         width: 6em;
-        top: -4em;
-        left: 8em;
+        top: 17em;
+        left: 10em;
     }
  
     .hamburger > button > i {
         left: 2em;
         font-size: 1em;
     }
-
     .nav ul{
         gap: 0.2em;
         margin: 0 2em;
@@ -248,11 +252,12 @@ span.season-word {
         left: 8em;
     }
  
+    .hamburger{
+        left: 1em !important;
+        bottom: 21em !important;
+    }
     .hamburger > button > i {
         left: 2em;
-        font-size: 2em;
-        top: 4em;
-
     }
 
     .nav ul{

@@ -234,10 +234,18 @@ body {
         left: 6.6em;
         top: 31em;
     }
+    .main > h3{
+        font-size: 10px;
+        left: 6.6em;
+        top: 31em;
+    }
     .main > img {
         width: 6em;
-        top: -4em;
-        left: 8em;
+        top: 17em;
+        left: 10em;
+    } .hamburger > button > i {
+        left: 2em;
+        font-size: 1em;
     }
  
     .hamburger > button > i {
@@ -318,12 +326,12 @@ body {
         top: -4em;
         left: 8em;
     }
- 
+    .hamburger{
+        left: 1em !important;
+        bottom: 26em !important;
+    }
     .hamburger > button > i {
         left: 2em;
-        font-size: 2em;
-        top: 4em;
-
     }
     .nav ul{
         gap: 0.2em;
@@ -462,5 +470,14 @@ body {
     }
     .s6 img{
         height: 60vh;
+    }
+    .full-image{
+        height: 30vh;
+    }
+    .text{
+        color: white;
+        margin: 1em 0em;
+        font-size: small;
+        width: 61vw;
     }
   }
